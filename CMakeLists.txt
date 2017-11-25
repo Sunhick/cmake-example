@@ -43,3 +43,4 @@ endif (USE_GRAPHICS)
 
 target_link_libraries (neon ${LIBS})
 
+install (TARGETS neon DESTINATION bin)
