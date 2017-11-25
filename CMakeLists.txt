@@ -16,9 +16,9 @@ configure_file (
  
 # add the binary tree to the search path for include files
 # so that we will find TutorialConfig.h
-include_directories ("${PROJECT_BINARY_DIR}")
+include_directories ("${PROJECT_BINARY_DIR}" "console")
 
-add_library (console console.cpp)
+add_library (console console/console.cpp)
 
 add_executable (kk main.cpp)
 target_link_libraries (kk console)
