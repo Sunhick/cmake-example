@@ -17,6 +17,8 @@ void Line::draw() {
 
   f();
   cout << "Drawing line..." << endl;
+  ctx.print();
+  cout << "Line drawn on the context" << "\n";
 }
 
 void Line::resize() {

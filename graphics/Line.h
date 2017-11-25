@@ -2,6 +2,8 @@
 
 #include <string>
 
+#include "core/core.h"
+
 using namespace std;
 
 namespace neon {
@@ -10,6 +12,7 @@ namespace neon {
 class Line {
  private:
   std::string uid;
+  core::Context ctx;
   
  public:
   std::string getUid();

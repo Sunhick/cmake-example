@@ -2,4 +2,5 @@
 #cmakedefine VERSION_MAJOR @VERSION_MAJOR@
 #cmakedefine VERSION_MINOR @VERSION_MINOR@
 
+#cmakedefine USE_GRAPHICS @USE_GRAPHICS@
 #cmakedefine AUTHOR "@AUTHOR@"
