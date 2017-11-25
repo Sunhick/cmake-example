@@ -30,3 +30,13 @@ To install release binaries,
 ```$ cmake .. -DCMAKE_INSTALL_PREFIX=../install -DCMAKE_BUILD_TYPE=Relase```
 
 ### Testing package using CMake
+
+## GIT trick
+
+To remove all files/ folder that are untracted run,
+
+```$ git clean -x -d -f ```
+
+To remove any dangling commits, branches etc, then run
+
+```$ git gc --prune=now```
