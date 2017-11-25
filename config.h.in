@@ -1,0 +1,5 @@
+// the configured options and settings for Tutorial
+#cmakedefine VERSION_MAJOR @VERSION_MAJOR@
+#cmakedefine VERSION_MINOR @VERSION_MINOR@
+
+#cmakedefine AUTHOR "@AUTHOR@"
