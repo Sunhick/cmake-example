@@ -2,6 +2,16 @@ cmake_minimum_required (VERSION 3.6)
 
 project (neon)
 
+# set (CMAKE_CXX_STANDARD 11)
+
+add_executable (neon main.cpp)
+# set(CMAKE_CXX_FLAGS "-Wall -std=c++0x")
+add_definitions ( 
+  "-std=c++11 -Wc++11-extensions -pedantic -Wall -Werror -Wimplicit -Wunused
+  -Wcomment -Wchar-subscripts -Wuninitialized -Wshadow -Wcast-qual -Wcast-align
+  -Wwrite-strings -Wno-deprecated-declarations -Wno-unknown-pragmas
+  -Wformat-security")
+
 # The version number.
 set (VERSION_MAJOR 1)
 set (VERSION_MINOR 0)
@@ -19,7 +29,8 @@ configure_file (
 include_directories ("${PROJECT_BINARY_DIR}" "console")
 
 add_subdirectory ("console")
+add_subdirectory ("ui")
+add_subdirectory ("graphics")
 
-add_executable (kk main.cpp)
-target_link_libraries (kk console)
+target_link_libraries (neon console ui graphics)
 
