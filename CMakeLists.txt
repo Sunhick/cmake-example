@@ -17,6 +17,9 @@ set (VERSION_MAJOR 1)
 set (VERSION_MINOR 0)
 set (AUTHOR "Sunil")
 
+# optional modules
+option (USE_GRAPHICS "Use graphics module" ON)
+
 # configure a header file to pass some of the CMake settings
 # to the source code
 configure_file (
@@ -30,7 +33,13 @@ include_directories ("${PROJECT_BINARY_DIR}" "console")
 
 add_subdirectory ("console")
 add_subdirectory ("ui")
-add_subdirectory ("graphics")
 
-target_link_libraries (neon console ui graphics)
+set (LIBS console ui)
+
+if (USE_GRAPHICS)
+  add_subdirectory ("graphics")
+  set (LIBS ${LIBS} graphics)
+endif (USE_GRAPHICS)
+
+target_link_libraries (neon ${LIBS})
 
