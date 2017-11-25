@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.6)
 
-project (kk)
+project (neon)
 
 # The version number.
 set (VERSION_MAJOR 1)
@@ -18,7 +18,7 @@ configure_file (
 # so that we will find TutorialConfig.h
 include_directories ("${PROJECT_BINARY_DIR}" "console")
 
-add_library (console console/console.cpp)
+add_subdirectory ("console")
 
 add_executable (kk main.cpp)
 target_link_libraries (kk console)
