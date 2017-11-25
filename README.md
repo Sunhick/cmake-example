@@ -15,7 +15,8 @@ disable the graphics modules as,
 
 ```$ cmake .. -DUSE_GRAPHICS=OFF```
 
-The graphics module is included by default in the build. see option flag in CMakeLists.txt in project root folder.
+The graphics module is included by default in the build. see option flag in 
+CMakeLists.txt in project root folder.
 
 ### Installing the binaries / package.
 
@@ -23,5 +24,9 @@ To install the package use the CMake's variable ```CMAKE_INSTALL_PREFIX```.
 
 ```$ cmake .. -DCMAKE_INSTALL_PREFIX=../install```
 ```$ make && make install```
+
+To install release binaries,
+
+```$ cmake .. -DCMAKE_INSTALL_PREFIX=../install -DCMAKE_BUILD_TYPE=Relase```
 
 ### Testing package using CMake
