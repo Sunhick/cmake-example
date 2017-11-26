@@ -4,24 +4,23 @@
 
 namespace neon {
 
-std::string Line::getUid() {
+std::string Line::GetUid() {
   return "Line";
 }
 
-void Line::draw() {
+void Line::Draw() {
   auto f = []() {
-    cout << "calculating where to draw line..." << "\n";
+    std::cout << "calculating where to draw line..." << "\n";
   };
 
   f();
   std::cout << "Drawing line..." << std::endl;
-  ctx.print();
+  ctx.Print();
   std::cout << "Line drawn on the context" << "\n";
 }
 
-void Line::resize() {
+void Line::Resize() {
   std::cout << "Resizing line..." << "\n";
 }
-
 
 } // namespace neon

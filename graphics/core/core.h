@@ -6,11 +6,11 @@ namespace neon {
 namespace core {
 
 class Context {
+ public:
+  void Print();
+
  private:
   std::string contextId;
-
- public:
-  void print();
 }; // class Context
 
 } // namespace core

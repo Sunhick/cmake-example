@@ -11,7 +11,7 @@ class Gui {
   std::string id;
 
  public:
-  std::string getContainerId();
+  std::string GetContainerId();
 }; // namespace Gui
 
 } // namespace neon

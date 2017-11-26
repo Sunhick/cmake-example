@@ -6,13 +6,13 @@ namespace neon {
 
 // define a generic graphics object
 class object {
- private:
-  std::string uid;
-  
  public:
   std::string getUid();
   void draw();
   void resize();
+  
+ private:
+  std::string uid;
 }; // class object
 
 } // namespcae neon

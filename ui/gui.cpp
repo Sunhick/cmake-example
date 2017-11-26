@@ -2,7 +2,7 @@
 
 namespace neon {
 
-std::string Gui::getContainerId() {
+std::string Gui::GetContainerId() {
   return std::string("45563abc32");
 }
 

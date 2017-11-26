@@ -6,11 +6,11 @@ namespace neon {
 
 Console::Console(const std::string& n) : name(n) { }
 
-void Console::print_name() {
+void Console::PrintName() {
   std::cout << "name: " << name << "\n";
 }
 
-void Console::print_guid() {
+void Console::PrintGuid() {
   std::cout << "Guid" << "\n";
 }
 

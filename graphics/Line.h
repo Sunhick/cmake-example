@@ -8,14 +8,14 @@ namespace neon {
 
 // Line graphics object
 class Line {
+ public:
+  std::string GetUid();
+  void Draw();
+  void Resize();
+
  private:
   std::string uid;
   core::Context ctx;
-  
- public:
-  std::string getUid();
-  void draw();
-  void resize();
 }; // class object
 
 } // namespcae neon

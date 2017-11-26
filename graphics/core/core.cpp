@@ -7,14 +7,14 @@ namespace core {
 
 namespace {
 
-void helper() {
+void Helper() {
   std::cout << "core helper called" << "\n";
 }
 
 } // namespace 
 
-void Context::print() {
-  helper();
+void Context::Print() {
+  Helper();
   contextId = "Context.graphics.0.445de";
   std::cout << "context id: " << contextId << std::endl;
 }

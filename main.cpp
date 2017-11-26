@@ -16,15 +16,15 @@ int main(UNUSED int argc, UNUSED char **argv) {
   std::cout << "Author: " << AUTHOR << "\n";
 
   neon::Console c("Radon");
-  c.print_name();
+  c.PrintName();
 
   neon::Gui ui;
-  std::cout << "Container: " << ui.getContainerId() << std::endl;
+  std::cout << "Container: " << ui.GetContainerId() << std::endl;
 
 #ifdef USE_GRAPHICS
   neon::Line line;
-  line.draw();
-  line.resize();
+  line.Draw();
+  line.Resize();
 #endif
 
 #if defined(HAS_LOG)
@@ -32,6 +32,6 @@ int main(UNUSED int argc, UNUSED char **argv) {
 #else
   std::cout << "OS doesn't support log." << "\n";
 #endif
-  
+
   return 0;
 }
