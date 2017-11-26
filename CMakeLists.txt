@@ -12,6 +12,10 @@ add_definitions (
   -Wwrite-strings -Wno-deprecated-declarations -Wno-unknown-pragmas
   -Wformat-security")
 
+add_definitions(--coverage)
+set(CMAKE_EXE_LINKER_FLAGS ${CMAKE_EXE_LINKER_FLAGS} " --coverage")
+
+
 # The version number.
 set (VERSION_MAJOR 1)
 set (VERSION_MINOR 0)

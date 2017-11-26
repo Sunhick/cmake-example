@@ -64,6 +64,12 @@ To create binary distributable (binary tar ball) -
 
 ```$ cpack --config CPackConfig.cmake```
 
+### Dashboard for CTest
+
+With CMake you can run tests and upload the results to kitware's [public dashboard](https://open.cdash.org/index.php?project=PublicDashboard)
+
+```$ ctest -D Experimental```
+
 ## GIT trick
 
 To remove all files/ folder that are untracted run,
