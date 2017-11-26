@@ -1,4 +1,4 @@
-#include "gui.h"
+#include "ui/gui.h"
 
 namespace neon {
 

@@ -1,8 +1,6 @@
-#include "Line.h"
+#include "graphics/Line.h"
 
 #include <iostream>
-
-using namespace std;
 
 namespace neon {
 
@@ -16,13 +14,13 @@ void Line::draw() {
   };
 
   f();
-  cout << "Drawing line..." << endl;
+  std::cout << "Drawing line..." << std::endl;
   ctx.print();
-  cout << "Line drawn on the context" << "\n";
+  std::cout << "Line drawn on the context" << "\n";
 }
 
 void Line::resize() {
-  cout << "Resizing line..." << "\n";
+  std::cout << "Resizing line..." << "\n";
 }
 
 

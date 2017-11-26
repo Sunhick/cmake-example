@@ -2,8 +2,6 @@
 
 #include <string>
 
-using namespace std;
-
 namespace neon {
 
 // define a generic graphics object

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <config.h>
 
-#include "console.h"
+#include "console/console.h"
 #include "ui/gui.h"
 
 #ifdef USE_GRAPHICS
@@ -9,19 +9,17 @@
 #include "graphics/object.h"
 #endif
 
-using namespace std;
-
 #define UNUSED __attribute__((unused))
 
 int main(UNUSED int argc, UNUSED char **argv) {
-  cout << "Welcome to cmake tutorials!" << "\n";
-  cout << "Author: " << AUTHOR << "\n";
+  std::cout << "Welcome to cmake tutorials!" << "\n";
+  std::cout << "Author: " << AUTHOR << "\n";
 
   neon::Console c("Radon");
   c.print_name();
 
   neon::Gui ui;
-  cout << "Container: " << ui.getContainerId() << endl;
+  std::cout << "Container: " << ui.getContainerId() << std::endl;
 
 #ifdef USE_GRAPHICS
   neon::Line line;
@@ -30,9 +28,9 @@ int main(UNUSED int argc, UNUSED char **argv) {
 #endif
 
 #if defined(HAS_LOG)
-  cout << "OS support log(...) function." << "\n";
+  std::cout << "OS support log(...) function." << "\n";
 #else
-  cout << "OS doesn't support log." << "\n";
+  std::cout << "OS doesn't support log." << "\n";
 #endif
   
   return 0;

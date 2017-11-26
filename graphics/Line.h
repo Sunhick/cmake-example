@@ -2,9 +2,7 @@
 
 #include <string>
 
-#include "core/core.h"
-
-using namespace std;
+#include "graphics/core/core.h"
 
 namespace neon {
 
