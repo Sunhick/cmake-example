@@ -10,7 +10,7 @@ file (GLOB HEADERS *.h)
 file (GLOB SOURCES *.cpp)
 
 # cmake by default will create a static library. 
-add_library (${TARGET} ${SOURCES})
+add_library (${TARGET} SHARED ${SOURCES})
 
 # install the package. put the library in bin and header files for development.
 install (TARGETS ${TARGET} DESTINATION libs)
