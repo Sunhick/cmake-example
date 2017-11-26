@@ -11,7 +11,7 @@
 
 using namespace std;
 
-int main(int argc, char **argv) {
+int main([[maybe_unused]] int argc, [[maybe_unused]] char **argv) {
   cout << "Welcome to cmake tutorials!" << "\n";
   cout << "Author: " << AUTHOR << "\n";
 

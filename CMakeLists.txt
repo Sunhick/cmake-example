@@ -8,10 +8,10 @@ add_executable (neon ${SRCS})
 
 # set(CMAKE_CXX_FLAGS "-Wall -std=c++0x")
 add_definitions ( 
-  "-std=c++11 -Wc++11-extensions -pedantic -Wall -Werror -Wimplicit -Wunused
-  -Wcomment -Wchar-subscripts -Wuninitialized -Wshadow -Wcast-qual -Wcast-align
-  -Wwrite-strings -Wno-deprecated-declarations -Wno-unknown-pragmas
-  -Wformat-security")
+  "-std=c++1z -fno-inline -Wall -Werror -Wextra -Wfloat-equal -Wshadow
+	 -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings
+	 -Wno-conversion -Wdisabled-optimization -Wredundant-decls
+	 -Wunused-value -Wno-deprecated -g -O0")
 
 # The version number.
 set (VERSION_MAJOR 1)
@@ -27,7 +27,7 @@ configure_file (
   "${PROJECT_SOURCE_DIR}/config.h.in"
   "${PROJECT_BINARY_DIR}/config.h"
   )
- 
+
 # add the binary tree to the search path for include files
 # so that we will find TutorialConfig.h
 include_directories ("${PROJECT_BINARY_DIR}" "console")
@@ -69,7 +69,7 @@ set_tests_properties (neon_graphics PROPERTIES PASS_REGULAR_EXPRESSION
 # Build a CPack driven installer package
 include (InstallRequiredSystemLibraries)
 set (CPACK_RESOURCE_FILE_LICENSE  
-     "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")
+  "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")
 set (CPACK_PACKAGE_VERSION_MAJOR "${VERSION_MAJOR}")
 set (CPACK_PACKAGE_VERSION_MINOR "${VERSION_MINOR}")
 include (CPack)
