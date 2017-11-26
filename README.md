@@ -84,12 +84,11 @@ need to let cmake know c/c++ compiler, target environment location(location of s
 
 Now to compile neon binaries targeted for arm-eabi,
 
-``` $ mkdir build && cd build ```
-
-```$ cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchains/gcc-arm-eabi.cmake -DCMAKE_INSTLL_PREFIX=../install ```
-
-``` $ make && make install```
-
+```sh
+$ mkdir build && cd build
+$ cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchains/gcc-arm-eabi.cmake -DCMAKE_INSTLL_PREFIX=../install
+$ make && make install
+```
 
 # GIT trick
 
