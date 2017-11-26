@@ -31,6 +31,13 @@ To install release binaries,
 
 ### Testing package using CMake
 
+Once the application has been compiled, you can run tests to verify everything's okay.
+To run ctest type in -
+
+```$ cmake .. && make ````
+
+```$ ctest```
+
 ## GIT trick
 
 To remove all files/ folder that are untracted run,

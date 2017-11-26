@@ -44,3 +44,18 @@ endif (USE_GRAPHICS)
 target_link_libraries (neon ${LIBS})
 
 install (TARGETS neon DESTINATION bin)
+
+# Verify application is working correctly
+# by performing some test on the application.
+# using ctest.
+include (CTest)
+
+add_test (neon_runs neon)
+
+add_test (neon_greets neon)
+set_tests_properties (neon_greets PROPERTIES PASS_REGULAR_EXPRESSION
+  "Welcome to cmake *")
+
+add_test(neon_graphics neon)
+set_tests_properties (neon_graphics PROPERTIES PASS_REGULAR_EXPRESSION
+  "Line drawn on the context")
