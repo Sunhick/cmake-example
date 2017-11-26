@@ -7,7 +7,9 @@ file (GLOB SOURCES *.cpp)
 
 add_subdirectory (core)
 
-add_library (${TARGET} SHARED ${SOURCES})
+# add_library (${TARGET} SHARED ${SOURCES})
+add_library (${TARGET} STATIC ${SOURCES})
+
 target_link_libraries (${TARGET} core)
 
 install (TARGETS ${TARGET} DESTINATION libs)
