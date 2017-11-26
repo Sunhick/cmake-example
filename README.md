@@ -43,6 +43,12 @@ To run ctest type in -
 Sometime you may want to verify certain things such as wheather a particular function exists on 
 the target OS. for e.g ```log``` function etc... This is where introspection of cmake come in handy.
 
+### Adding generated files and generator
+
+```TODO Complete this section with some valid real world usecase```.
+
+
+
 
 ## GIT trick
 
