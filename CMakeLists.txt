@@ -3,8 +3,9 @@ cmake_minimum_required (VERSION 3.6)
 project (neon)
 
 # set (CMAKE_CXX_STANDARD 11)
+file (GLOB SRCS *.cpp)
+add_executable (neon ${SRCS})
 
-add_executable (neon main.cpp)
 # set(CMAKE_CXX_FLAGS "-Wall -std=c++0x")
 add_definitions ( 
   "-std=c++11 -Wc++11-extensions -pedantic -Wall -Werror -Wimplicit -Wunused

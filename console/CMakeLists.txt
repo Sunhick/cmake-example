@@ -7,9 +7,10 @@ project (${TARGET})
 
 # use glob to pick up all header files
 file (GLOB HEADERS *.h)
+file (GLOB SOURCES *.cpp)
 
 # cmake by default will create a static library. 
-add_library (${TARGET} console.cpp)
+add_library (${TARGET} ${SOURCES})
 
 # install the package. put the library in bin and header files for development.
 install (TARGETS ${TARGET} DESTINATION libs)
