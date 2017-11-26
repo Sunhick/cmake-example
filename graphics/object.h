@@ -7,9 +7,9 @@ namespace neon {
 // define a generic graphics object
 class object {
  public:
-  std::string getUid();
-  void draw();
-  void resize();
+  virtual std::string GetUid() = 0;
+  virtual void draw() = 0;
+  virtual void resize() = 0;
   
  private:
   std::string uid;
