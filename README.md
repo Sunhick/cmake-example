@@ -64,12 +64,6 @@ To create binary distributable (binary tar ball) -
 
 ```$ cpack --config CPackConfig.cmake```
 
-### Dashboard for CTest
-
-With CMake you can run tests and upload the results to kitware's [public dashboard](https://open.cdash.org/index.php?project=PublicDashboard)
-
-```$ ctest -D Experimental```
-
 ## GIT trick
 
 To remove all files/ folder that are untracted run,
@@ -79,3 +73,22 @@ To remove all files/ folder that are untracted run,
 To remove any dangling commits, branches etc, then run
 
 ```$ git gc --prune=now```
+
+<details>
+  <summary>Your header here! (Click to expand)</summary>
+  ### Building installer
+
+CMake not only supports ```source installation``` (get sources, cmake .., make and make 
+install) but also support ```binary installation``` (install directly from distributed 
+binary). CMake provides ```cpack``` for this purpose. Prequisites are binaries should be
+compiled before running cpack.
+
+Now to create a source distributables (source tar ball) -
+
+```$ cpack --config CPackSourceConfig.cmake```
+
+To create binary distributable (binary tar ball) -
+
+```$ cpack --config CPackConfig.cmake```
+
+</details>
