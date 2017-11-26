@@ -9,7 +9,7 @@ add_subdirectory (core)
 
 # add_library (${TARGET} SHARED ${SOURCES})
 # include_directories ("${CMAKE_SOURCE_DIR}")
-add_library (${TARGET} STATIC ${SOURCES})
+add_library (${TARGET} STATIC ${SOURCES} ${HEADERS})
 
 target_link_libraries (${TARGET} core)
 

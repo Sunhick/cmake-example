@@ -90,6 +90,19 @@ $ cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchains/gcc-arm-eabi.cmake -DCMAKE_INSTL
 $ make && make install
 ```
 
+### Generating platform specific build files
+
+CMake generates Makefiles, but you also use it to generate build files for specific platform / editor. For e.g on Mac if you don't want use emacs and Makefiles you can generate xcode project and corresponding clang make file. You would run somthing like,
+
+
+```sh 
+$ mkdir xcode && cd xcode
+$ cmake .. -G Xcode
+$ open neon.xcodeproj
+```
+
+That will open up neon project in xcode. On windows you can use Visual studio etc.
+
 # GIT trick
 
 To remove all files/ folder that are untracted run,
