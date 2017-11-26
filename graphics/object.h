@@ -8,8 +8,8 @@ namespace neon {
 class object {
  public:
   virtual std::string GetUid() = 0;
-  virtual void draw() = 0;
-  virtual void resize() = 0;
+  virtual void Draw() = 0;
+  virtual void Resize() = 0;
   
  private:
   std::string uid;
