@@ -11,7 +11,9 @@
 
 using namespace std;
 
-int main([[maybe_unused]] int argc, [[maybe_unused]] char **argv) {
+#define UNUSED __attribute__((unused))
+
+int main(UNUSED int argc, UNUSED char **argv) {
   cout << "Welcome to cmake tutorials!" << "\n";
   cout << "Author: " << AUTHOR << "\n";
 
