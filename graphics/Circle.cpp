@@ -7,6 +7,8 @@
 
 #include "graphics/Circle.h"
 
+#include <iostream>
+
 namespace neon {
 
 std::string Circle::GetUid() {
