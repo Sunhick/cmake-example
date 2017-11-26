@@ -22,8 +22,10 @@ CMakeLists.txt in project root folder.
 
 To install the package use the CMake's variable ```CMAKE_INSTALL_PREFIX```. 
 
-```$ cmake .. -DCMAKE_INSTALL_PREFIX=../install```
-```$ make && make install```
+```sh
+$ cmake .. -DCMAKE_INSTALL_PREFIX=../install
+$ make && make install
+```
 
 To install release binaries,
 
@@ -34,9 +36,10 @@ To install release binaries,
 Once the application has been compiled, you can run tests to verify everything's okay.
 To run ctest type in -
 
-```$ cmake .. && make ````
-
-```$ ctest```
+```sh
+$ cmake .. && make
+$ ctest
+```
 
 ### System Introspection
 
