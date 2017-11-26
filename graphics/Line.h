@@ -6,7 +6,9 @@
 
 namespace neon {
 
-// Line graphics object
+/**
+ * Line graphics object
+ */
 class Line {
  public:
   std::string GetUid();
