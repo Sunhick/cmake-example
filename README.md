@@ -64,7 +64,34 @@ To create binary distributable (binary tar ball) -
 
 ```$ cpack --config CPackConfig.cmake```
 
-## GIT trick
+### Cross compiling 
+
+Cross compiling: Build package which is target for running on different machine architecture. 
+For e.g. i would like to compile code on my mac and run it on windows, linux, tablets, phones or
+rasberry pi board etc.
+
+
+We will cross-compile when developing for mobile phones, Raspberry pi, beagle 
+board etc or other targets. Most of us compile projects on our laptops, destop etc which are 
+intel x86 or x86_64 architecture. So basically to do cross compiling we need to corresponding 
+tool chain and binaries for linking. 
+
+
+CMake supports cross compiling with varity of compilers. To do cross compiling with cmake we 
+need to let cmake know c/c++ compiler, target environment location(location of system binaries)
+, target install location. See toolchains/gcc-arm-eabi.cmake for example.
+
+
+Now to compile neon binaries targeted for arm-eabi,
+
+``` $ mkdir build && cd build ```
+
+```$ cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchains/gcc-arm-eabi.cmake -DCMAKE_INSTLL_PREFIX=../install ```
+
+``` $ make && make install```
+
+
+# GIT trick
 
 To remove all files/ folder that are untracted run,
 
