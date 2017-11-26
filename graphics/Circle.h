@@ -5,9 +5,20 @@
 //  Created by Sunil on 11/25/17.
 //
 
-#ifndef Circle_hpp
-#define Circle_hpp
+#pragma once
 
-#include <stdio.h>
+#include "graphics/object.h"
 
-#endif /* Circle_hpp */
+namespace neon {
+
+class Circle : public object {
+ public:
+  Circle();
+  virtual ~Circle();
+
+  std::string GetUid() override;
+  void Draw() override;
+  void Resize() override;
+}; // Circle
+
+}  // neon
