@@ -26,6 +26,12 @@ int main(int argc, char **argv) {
   line.draw();
   line.resize();
 #endif
+
+#if defined(HAS_LOG)
+  cout << "OS support log(...) function." << "\n";
+#else
+  cout << "OS doesn't support log." << "\n";
+#endif
   
   return 0;
 }

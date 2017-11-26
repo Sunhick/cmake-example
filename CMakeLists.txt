@@ -41,6 +41,11 @@ if (USE_GRAPHICS)
   set (LIBS ${LIBS} graphics)
 endif (USE_GRAPHICS)
 
+# Introspection: Probing host operating system for supported features / functions.
+include (${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
+# include (CheckLogCheckFunctionExists)
+check_function_exists (log HAS_LOG)
+
 target_link_libraries (neon ${LIBS})
 
 install (TARGETS neon DESTINATION bin)

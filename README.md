@@ -38,6 +38,12 @@ To run ctest type in -
 
 ```$ ctest```
 
+### System Introspection
+
+Sometime you may want to verify certain things such as wheather a particular function exists on 
+the target OS. for e.g ```log``` function etc... This is where introspection of cmake come in handy.
+
+
 ## GIT trick
 
 To remove all files/ folder that are untracted run,

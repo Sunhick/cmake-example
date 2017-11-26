@@ -4,3 +4,5 @@
 
 #cmakedefine USE_GRAPHICS @USE_GRAPHICS@
 #cmakedefine AUTHOR "@AUTHOR@"
+
+#cmakedefine HAS_LOG @HAS_LOG@
