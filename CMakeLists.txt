@@ -64,3 +64,11 @@ set_tests_properties (neon_greets PROPERTIES PASS_REGULAR_EXPRESSION
 add_test(neon_graphics neon)
 set_tests_properties (neon_graphics PROPERTIES PASS_REGULAR_EXPRESSION
   "Line drawn on the context")
+
+# Build a CPack driven installer package
+include (InstallRequiredSystemLibraries)
+set (CPACK_RESOURCE_FILE_LICENSE  
+     "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")
+set (CPACK_PACKAGE_VERSION_MAJOR "${VERSION_MAJOR}")
+set (CPACK_PACKAGE_VERSION_MINOR "${VERSION_MINOR}")
+include (CPack)

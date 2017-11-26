@@ -47,8 +47,22 @@ the target OS. for e.g ```log``` function etc... This is where introspection of 
 
 ```TODO Complete this section with some valid real world usecase```.
 
+[Read more](https://blog.kangz.net/posts/2016/05/26/integrating-a-code-generator-with-cmake/)
 
+### Building installer
 
+CMake not only supports ```source installation``` (get sources, cmake .., make and make 
+install) but also support ```binary installation``` (install directly from distributed 
+binary). CMake provides ```cpack``` for this purpose. Prequisites are binaries should be
+compiled before running cpack.
+
+Now to create a source distributables (source tar ball) -
+
+```$ cpack --config CPackSourceConfig.cmake```
+
+To create binary distributable (binary tar ball) -
+
+```$ cpack --config CPackConfig.cmake```
 
 ## GIT trick
 
