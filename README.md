@@ -104,6 +104,17 @@ $ cmake .. -G Xcode
 $ open neon.xcodeproj
 ```
 
+### Using CCMake
+
+To configure cmake some times you have to pass a list of ```-DCMAKE_XXX``` arguments and can be painful to type all those argument. To make this easier cmake provides ccmake (curses with cmake). It's terminal based GUI to configure cmake and generate the build files. To invoke ccmake,
+
+```sh
+$ mkdir build && cd build
+$ ccmake ..
+```
+
+After you configure, type ```g``` to generate build files and exit out of the editor.
+
 That will open up neon project in xcode. On windows you can use Visual studio etc.
 
 # GIT trick
