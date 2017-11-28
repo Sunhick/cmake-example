@@ -9,7 +9,7 @@
 
 namespace neon {
 
-Console::Console(constn std::string& n) : name(n) { }
+Console::Console(const std::string& n) : name(n) { }
 
 void Console::PrintName() {
   std::cout << "name: " << name << "\n";
