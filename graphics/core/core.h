@@ -1,3 +1,8 @@
+/**
+ * graphics/core/core.h
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #pragma once
 
 #include <string>
@@ -11,7 +16,7 @@ class Context {
 
  private:
   std::string contextId;
-}; // class Context
+};  // class Context
 
-} // namespace core
-} // namespcae neon
+}  // namespace core
+}  // namespace neon

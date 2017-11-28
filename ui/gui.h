@@ -1,3 +1,8 @@
+/**
+ * ui/gui.h
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #pragma once
 
 #include <string>
@@ -12,6 +17,6 @@ class Gui {
 
  public:
   std::string GetContainerId();
-}; // namespace Gui
+};  // namespace Gui
 
-} // namespace neon
+}  // namespace neon

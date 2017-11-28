@@ -1,11 +1,11 @@
-//
-//  Circle.hpp
-//  neon
-//
-//  Created by Sunil on 11/25/17.
-//
-
+/**
+ * graphics/Circle.cpp
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #pragma once
+
+#include <string>
 
 #include "graphics/object.h"
 
@@ -19,6 +19,6 @@ class Circle : public object {
   std::string GetUid() override;
   void Draw() override;
   void Resize() override;
-}; // Circle
+};  // class Circle
 
-}  // neon
+}  // namespace neon

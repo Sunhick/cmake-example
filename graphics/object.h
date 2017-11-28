@@ -1,3 +1,8 @@
+/**
+ * graphics/object.h
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #pragma once
 
 #include <string>
@@ -10,9 +15,9 @@ class object {
   virtual std::string GetUid() = 0;
   virtual void Draw() = 0;
   virtual void Resize() = 0;
-  
+
  private:
   std::string uid;
-}; // class object
+};  // class object
 
-} // namespcae neon
+}  // namespace neon

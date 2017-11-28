@@ -1,3 +1,8 @@
+/**
+ * graphics/Line.h
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #pragma once
 
 #include <string>
@@ -18,6 +23,6 @@ class Line {
  private:
   std::string uid;
   core::Context ctx;
-}; // class object
+};  // class object
 
-} // namespcae neon
+}  // namespace neon

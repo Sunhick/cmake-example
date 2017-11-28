@@ -1,3 +1,8 @@
+/**
+ * graphics/Line.cpp
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #include "graphics/Line.h"
 
 #include <iostream>
@@ -38,6 +43,4 @@ void Line::Resize() {
   std::cout << "Resizing line..." << "\n";
 }
 
-
-
-} // namespace neon
+}  // namespace neon

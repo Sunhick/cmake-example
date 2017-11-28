@@ -1,3 +1,8 @@
+/**
+ * console/console.h
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #pragma once
 
 #include <string>
@@ -6,13 +11,13 @@ namespace neon {
 
 class Console {
  public:
-  Console(const std::string& n);
+  explicit Console(const std::string& n);
   void PrintName();
   void PrintGuid();
 
  private:
   std::string name;
   std::string guid;
-}; // class neon
+};  // class neon
 
-} // namespace neon
+}  // namespace neon

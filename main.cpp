@@ -1,5 +1,11 @@
-#include <iostream>
+/**
+ * main.cpp
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #include <config.h>
+
+#include <iostream>
 
 #include "console/console.h"
 #include "ui/gui.h"

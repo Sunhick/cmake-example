@@ -1,10 +1,8 @@
-//
-//  Circle.cpp
-//  neon
-//
-//  Created by Sunil on 11/25/17.
-//
-
+/**
+ * graphics/Circle.cpp
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #include "graphics/Circle.h"
 
 #include <iostream>
@@ -23,4 +21,4 @@ void Circle::Resize() {
   std::cout << "Resizing the circle..." << "\n";
 }
 
-}  // neon
+}  // namespace neon

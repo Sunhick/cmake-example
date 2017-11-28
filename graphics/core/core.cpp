@@ -1,3 +1,8 @@
+/**
+ * graphics/core/core.cpp
+ *
+ * Copyright (c) 2017 Sunil
+ */
 #include "graphics/core/core.h"
 
 #include <iostream>
@@ -11,7 +16,7 @@ void Helper() {
   std::cout << "core helper called" << "\n";
 }
 
-} // namespace 
+}  // namespace
 
 void Context::Print() {
   Helper();
@@ -19,15 +24,5 @@ void Context::Print() {
   std::cout << "context id: " << contextId << std::endl;
 }
 
-} // namespace core
-} // namespace neon
-
-
-
-
-
-
-
-
-
-
+}  // namespace core
+}  // namespace neon
