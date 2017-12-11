@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2017 Sunil
  */
-#include <config.h>
+#include "config.h"
 
 #include <iostream>
 
@@ -18,7 +18,8 @@
 #define UNUSED __attribute__((unused))
 
 int main(UNUSED int argc, UNUSED char **argv) {
-  std::cout << "Welcome to cmake tutorials!" << "\n";
+  std::cout << "Welcome to cmake tutorials!"
+            << "\n";
   std::cout << "Author: " << AUTHOR << "\n";
 
   neon::Console c("Radon");
@@ -34,9 +35,11 @@ int main(UNUSED int argc, UNUSED char **argv) {
 #endif
 
 #if defined(HAS_LOG)
-  std::cout << "OS support log(...) function." << "\n";
+  std::cout << "OS support log(...) function."
+            << "\n";
 #else
-  std::cout << "OS doesn't support log." << "\n";
+  std::cout << "OS doesn't support log."
+            << "\n";
 #endif
 
   return 0;
