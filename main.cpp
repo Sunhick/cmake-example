@@ -16,6 +16,7 @@
 #endif
 
 #include <profile.h>
+#include <other.h>
 
 #define UNUSED __attribute__((unused))
 
@@ -48,5 +49,6 @@ int main(UNUSED int argc, UNUSED char **argv) {
 
   Profile f;
   f.describe();
+  std::cout << "magic number:" << getNumber() << std::endl;
   return 0;
 }
