@@ -15,7 +15,11 @@
 #include "graphics/object.h"
 #endif
 
+#include <profile.h>
+
 #define UNUSED __attribute__((unused))
+
+using namespace bazel101::profile;
 
 int main(UNUSED int argc, UNUSED char **argv) {
   std::cout << "Welcome to cmake tutorials!"
@@ -42,5 +46,7 @@ int main(UNUSED int argc, UNUSED char **argv) {
             << "\n";
 #endif
 
+  Profile f;
+  f.describe();
   return 0;
 }

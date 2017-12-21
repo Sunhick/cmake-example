@@ -30,7 +30,7 @@ configure_file (
 
 # include top level root directory.
 # All files need to include path from root, per google style c++ guide
-include_directories ("${CMAKE_SOURCE_DIR}")
+include_directories ("${CMAKE_SOURCE_DIR}" "3rd-party/include")
 
 # add the binary tree to the search path for include files
 # so that we will find TutorialConfig.h
@@ -39,7 +39,11 @@ include_directories ("${PROJECT_BINARY_DIR}" "console")
 add_subdirectory ("console")
 add_subdirectory ("ui")
 
-set (LIBS console ui)
+add_library(profile_impl SHARED IMPORTED)
+set_target_properties(
+  profile_impl PROPERTIES
+  IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/3rd-party/libs/libprofile_impl.a)
+set (LIBS console ui "profile_impl")
 
 if (USE_GRAPHICS)
   add_subdirectory ("graphics")
