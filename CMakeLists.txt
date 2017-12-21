@@ -44,10 +44,9 @@ find_package(Profile REQUIRED)
 if (NOT PROFILE_FOUND)
     message(FATAL_ERROR "Package profile not found")
 endif (NOT PROFILE_FOUND)
-# add_definitions(${PROFILE_DEFINITIONS})
+
 include_directories(${PROFILE_INCLUDE_DIR})
 
-message(STATUS "--->" ${PROFILE_LIBRARIES})
 set (LIBS console ui ${PROFILE_LIBRARIES})
 
 if (USE_GRAPHICS)
